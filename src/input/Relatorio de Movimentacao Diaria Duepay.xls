@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns="urn:schemas-microsoft-com:office:spreadsheet">
+    <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+        <Author>Telenet NetCard</Author>
+    </DocumentProperties>
+    <Styles>
+        <Style ss:ID="Default">
+            <Font ss:FontName="Tahoma" ss:Color="#000000" />
+            <Alignment ss:Vertical="Bottom" />
+        </Style>
+        <Style ss:ID="S01">
+            <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#000000" ss:Bold="1" />
+            <Alignment />
+            <Interior ss:Color="#D3D3D3" ss:Pattern="Solid" />
+        </Style>
+    </Styles>
+    <Worksheet ss:Name="Resultado">
+        <Table ss:FullColumns="1" ss:FullRows="1">
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Column ss:Width="100" />
+            <Row>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">CARTAO</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">DATA</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">DOC</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">VALOR</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">VAL_LIQ</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">TRANSACAO</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">PARCS</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">STATUS</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">CREDENCIADO</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">RAZSOC</Data>
+                </Cell>
+                <Cell ss:StyleID="S01">
+                    <Data ss:Type="String">CNPJ</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******7923</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 09:33:39</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">542243</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     540,40</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     540,40</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******3578</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 10:43:25</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">544601</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     313,90</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     313,90</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******2301</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 10:53:18</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">545042</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     152,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     152,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******1888</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 12:39:24</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">550524</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      55,10</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      55,10</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******9092</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 12:56:50</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">551431</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     338,30</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     338,30</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******8744</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 12:59:04</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">551537</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      89,60</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      89,60</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******9880</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 13:05:39</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">551872</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     104,20</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     104,20</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******2250</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 13:07:42</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">551968</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     100,70</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     100,70</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******9347</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 13:20:54</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">552657</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      53,15</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">      53,15</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******4166</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 13:37:10</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">553500</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     267,60</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     267,60</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******3032</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 14:50:51</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">557457</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     423,45</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     423,45</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******7482</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 15:19:03</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">559170</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     163,45</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     163,45</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******6569</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 15:34:40</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">560124</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     413,55</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     413,55</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******3737</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 15:36:12</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">560201</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     113,80</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     113,80</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******5221</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 16:39:14</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">564480</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     119,50</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     119,50</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******4575</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 16:42:20</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">564693</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">       6,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">       6,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******1468</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 17:40:10</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">568565</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     506,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     506,65</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******4935</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 17:55:31</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">569485</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     289,90</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     289,90</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+            <Row>
+                <Cell>
+                    <Data ss:Type="String">629846*******3389</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">22/01/2025 18:06:48</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">570130</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     617,70</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">     617,70</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">COMPRA                   </Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">1</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">VALIDA</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="Number">619054</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">ESTRELAR CENTER</Data>
+                </Cell>
+                <Cell>
+                    <Data ss:Type="String">31.707.841/0001-67</Data>
+                </Cell>
+            </Row>
+        </Table>
+        <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <PageSetup>
+                <Header Margin="0.3" />
+                <Footer Margin="0.3" />
+                <PageMargins Bottom="0.75" Left="0.7" Right="0.7" Top="0.75" />
+            </PageSetup>
+            <Print>
+                <ValidPrinterInfo />
+                <FitHeight>1</FitHeight>
+                <FitWidth>1</FitWidth>
+                <Scale>100</Scale>
+            </Print>
+            <Selected />
+        </WorksheetOptions>
+    </Worksheet>
+</Workbook>
