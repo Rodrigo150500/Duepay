@@ -1,0 +1,59 @@
+Input:
+
+XML_Vendas
+XLSX_Duepay
+
+Output:
+
+XLSX_Chaves
+
+--------------------------------------------------------
+Processo:
+ração dos valores (XML_Vendas)
+- CPF
+- Total
+- Chave NF
+
+Extração dos valores (XLSX_Duepay)
+- Total
+----------------------------------------------------------
+Output
+
+Arquivo XLSX
+- Data
+- CPF
+- Total
+- Chave NF
+------------------------------------------------------------------------------------------------------------------------
+
+Estrutura
+- src
+  - input
+    - XML_Vendas.xml
+    - XLSX_Duepay.xlsx
+  - output
+    - duepay.xlsx
+  - class
+    - xml_vendas.py
+    - xlsx_duepay.py
+  main.py
+------------------------------------------------------------------------------------------------------------------------
+Métodos
+- src
+  - input
+    - XML_Vendas.xml
+    - XLSX_Duepay.xlsx
+  - output
+    - duepay.xlsx
+  - class
+    - xml_vendas.py
+      - Input: folder_dir
+      - Output: Dataframe(Data, CPF, Total, Chave)
+      - Método:  Extract_data_cpf_total_chave() -> Dataframe
+    - xlsx_duepay.py
+     - Input: folder_dir
+     - Output: Dataframe(Total)
+     - Método: Extract_total()
+  main.py
+     
+
