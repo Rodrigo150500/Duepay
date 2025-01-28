@@ -1,8 +1,9 @@
 import os
 import pandas as pd
 from src.utils.path_finder import path_finder
+from src.classes.interface.duepay_interface import DuepayInterface
 
-class Duepay:
+class Duepay(DuepayInterface):
 
     def extract_total(self) -> pd.DataFrame:
         folder_path = path_finder(f"../input")
