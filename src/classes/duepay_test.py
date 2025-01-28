@@ -1,8 +1,9 @@
 from src.classes.duepay import Duepay
+from pandas import DataFrame
 
 def test_duepay():
 
     duepay = Duepay()
-    res = duepay.extract_total()
-    print(res)
+    response = duepay.extract_total()
 
+    assert isinstance(response, DataFrame)
