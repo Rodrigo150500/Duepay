@@ -11,6 +11,10 @@ class Vendas:
 
         extract_data = self.__extract_data_from_xml(files_path)
 
+        df = DataFrame(extract_data)
+
+        return df
+
         
     
     def __find_xmls(self) -> list:
@@ -25,26 +29,35 @@ class Vendas:
 
         return files_path
     
-    def __extract_data_from_xml(self, files_xml_path: list) -> DataFrame:
-
-        data = {}
+    def __extract_data_from_xml(self, files_xml_path: list) -> dict:
+        data = {
+                "CPF": [],
+                "NFe": []
+        }
         for xml in files_xml_path:
             
             tree = ET.parse(xml)
             root = tree.getroot()
 
             cpf_reference = root.find(".//CPF")
-            
 
-            print(cpf_reference)
+            if cpf_reference is not None:
 
-            if False:
+                cpf = cpf_reference.text.strip()            
 
                 nfe_reference = root.find(".//infCFe")
 
                 id_value = nfe_reference.get("Id")
 
-                key_acess_nfe = self.__process_infCFe(id_value)
+                nfe = self.__process_infCFe(id_value)
+
+                data["CPF"].append(cpf)
+                data["NFe"].append(nfe)
+        
+        return data
+
+                
+
 
 
             
