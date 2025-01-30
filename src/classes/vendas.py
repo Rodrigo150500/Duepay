@@ -86,4 +86,3 @@ class Vendas:
         #xxx.xxx.xxx-xx
         cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[8:10]}"
         return cpf
-
