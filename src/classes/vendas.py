@@ -60,7 +60,7 @@ class Vendas:
 
                 #Pegando o valor total
                 total_reference = root.find(".//vCFe")
-                total = total_reference.text.strip()
+                total = float(total_reference.text.strip().replace(",","."))
 
                 data["CPF"].append(cpf)
                 data["NFe"].append(nfe)
