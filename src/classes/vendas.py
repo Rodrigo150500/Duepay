@@ -32,7 +32,8 @@ class Vendas:
     def __extract_data_from_xml(self, files_xml_path: list) -> dict:
         data = {
                 "CPF": [],
-                "NFe": []
+                "NFe": [],
+                "Total":[]
         }
         for xml in files_xml_path:
             
@@ -42,28 +43,47 @@ class Vendas:
             cpf_reference = root.find(".//CPF")
 
             if cpf_reference is not None:
+                
+                #Pegando CPF
+                cpf_value = cpf_reference.text.strip()  
 
-                cpf = cpf_reference.text.strip()            
+                cpf = self.__process_cpf(cpf_value)
 
+                
+                #Pegando a chave da Nota
                 nfe_reference = root.find(".//infCFe")
 
                 id_value = nfe_reference.get("Id")
 
                 nfe = self.__process_infCFe(id_value)
 
+
+                #Pegando o valor total
+                total_reference = root.find(".//vCFe")
+                total = total_reference.text.strip()
+
                 data["CPF"].append(cpf)
                 data["NFe"].append(nfe)
+                data["Total"].append(total)
         
         return data
 
                 
+    def __process_infCFe(self, nfe_value: str) -> str:
 
+        nfe_with_no_string = nfe_value[3:]
 
+        nfe = ""
+        for i in range(0, len(nfe_with_no_string)):
+            if i % 4 == 0:
+                nfe += " "+nfe_with_no_string[i]
+            else:
+                nfe += nfe_with_no_string[i]
 
-            
-
-    def __process_infCFe(self, nfc_value: str) -> str:
-
-        return nfc_value[3:]
-
+        return nfe
+    
+    def __process_cpf(self, cpf_value: str) -> str:
+        #xxx.xxx.xxx-xx
+        cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[8:10]}"
+        return cpf
 
