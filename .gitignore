@@ -1,9 +1,6 @@
 #files for input and output
-src/input/
-src/output/
-
-
-
+src/input/*
+src/output/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
