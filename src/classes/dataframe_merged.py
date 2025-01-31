@@ -24,9 +24,12 @@ class DataframeMerged(DataframeMergedInterface):
         dataframe_merge = dataframe_duepay.merge(dataframe_vendas, left_on="Valor", right_on="Total", how='outer')
 
         dataframe_merge = dataframe_merge.fillna("Verificar").infer_objects(copy=False)
+
+        return dataframe_merge
     
     def __export_dataframe(self, dataframe: DataFrame) -> None:
         
         name_excel_file_path = f"{path_finder("../output")}/Duepay_Final.xlsx"
 
         dataframe.to_excel(name_excel_file_path, index=False)
+        
