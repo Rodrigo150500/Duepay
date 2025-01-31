@@ -39,6 +39,7 @@ class Vendas:
             
             tree = ET.parse(xml)
             root = tree.getroot()
+            
 
             cpf_reference = root.find(".//CPF")
 
@@ -84,5 +85,5 @@ class Vendas:
     
     def __process_cpf(self, cpf_value: str) -> str:
         #xxx.xxx.xxx-xx
-        cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[8:10]}"
+        cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[9:11]}"
         return cpf
