@@ -1,9 +1,10 @@
 import os
+from .interface.vendas_interface import VendasInterface
 from xml.etree import ElementTree as ET
 from src.utils.path_finder import path_finder
 from pandas import DataFrame
 
-class Vendas:
+class Vendas(VendasInterface):
 
     def extract_data_cpf_total_chave(self) -> DataFrame:
         
