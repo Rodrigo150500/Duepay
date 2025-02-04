@@ -1,7 +1,7 @@
 import os
 from src.utils.path_finder import path_finder
 
-def clean_folder(path: str) -> None:
+def clean_zip_file(path: str) -> None:
     path_folder = path_finder(path)
 
     files = os.listdir(path_folder)
@@ -12,6 +12,6 @@ def clean_folder(path: str) -> None:
             
             file_path = os.path.join(path_folder, file)
 
-            if os.path.isfile(file_path):
+            if os.path.isfile(file_path) and ".zip" in file:
                 os.remove(file_path)
-        
+
