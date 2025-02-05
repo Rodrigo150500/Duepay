@@ -49,7 +49,7 @@ class Vendas(VendasInterface):
                 #Pegando CPF
                 cpf_value = cpf_reference.text.strip()  
 
-                cpf = self.__process_cpf(cpf_value)
+                cpf = self.__format_cpf(cpf_value)
 
                 
                 #Pegando a chave da Nota
@@ -57,7 +57,7 @@ class Vendas(VendasInterface):
 
                 id_value = nfe_reference.get("Id")
 
-                nfe = self.__process_infCFe(id_value)
+                nfe = self.__format_nfe(id_value)
 
 
                 #Pegando o valor total
@@ -71,7 +71,7 @@ class Vendas(VendasInterface):
         return data
 
                 
-    def __process_infCFe(self, nfe_value: str) -> str:
+    def __format_nfe(self, nfe_value: str) -> str:
 
         nfe_with_no_string = nfe_value[3:]
 
@@ -84,7 +84,7 @@ class Vendas(VendasInterface):
 
         return nfe
     
-    def __process_cpf(self, cpf_value: str) -> str:
+    def __format_cpf(self, cpf_value: str) -> str:
         #xxx.xxx.xxx-xx
         cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[9:11]}"
         return cpf
