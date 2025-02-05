@@ -33,8 +33,8 @@ class Vendas(VendasInterface):
     def __extract_data_from_xml(self, files_xml_path: list) -> dict:
         data = {
                 "CPF": [],
-                "NFe": [],
-                "Total":[]
+                "Total":[],
+                "NFe": []
         }
         for xml in files_xml_path:
             
