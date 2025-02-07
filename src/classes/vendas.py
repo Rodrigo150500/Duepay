@@ -1,8 +1,10 @@
 import os
+import datetime
 from .interface.vendas_interface import VendasInterface
 from xml.etree import ElementTree as ET
 from src.utils.path_finder import path_finder
 from pandas import DataFrame
+
 
 class Vendas(VendasInterface):
 
@@ -32,6 +34,7 @@ class Vendas(VendasInterface):
     
     def __extract_data_from_xml(self, files_xml_path: list) -> dict:
         data = {
+                "Data":[],
                 "CPF": [],
                 "Total":[],
                 "NFe": []
@@ -51,6 +54,12 @@ class Vendas(VendasInterface):
 
                 cpf = self.__format_cpf(cpf_value)
 
+                #pegando a data
+                date_reference = root.find(".//dEmi") 
+
+                date_value = date_reference.text.strip()
+
+                date = self.__format_date(date_value)
                 
                 #Pegando a chave da Nota
                 nfe_reference = root.find(".//infCFe")
@@ -64,9 +73,12 @@ class Vendas(VendasInterface):
                 total_reference = root.find(".//vCFe")
                 total = float(total_reference.text.strip().replace(",","."))
 
+
+                #Adicionando valores
                 data["CPF"].append(cpf)
                 data["NFe"].append(nfe)
                 data["Total"].append(total)
+                data['Data'].append(date)
         
         return data
 
@@ -88,3 +100,18 @@ class Vendas(VendasInterface):
         #xxx.xxx.xxx-xx
         cpf = f"{cpf_value[0:3]}.{cpf_value[3:6]}.{cpf_value[6:9]}-{cpf_value[9:11]}"
         return cpf
+
+    def __format_date(self, date: str) -> str:
+
+        #dd/mm/aaaa
+        #20250203 03/02/2025 
+
+        dia = date[6:8]
+        mes = date[4:6]
+        ano = date[0:4]
+
+        date_formated = f'{dia}/{mes}/{ano}'
+
+
+        return date_formated
+
