@@ -1,5 +1,4 @@
 import os
-import datetime
 from .interface.vendas_interface import VendasInterface
 from xml.etree import ElementTree as ET
 from src.utils.path_finder import path_finder
