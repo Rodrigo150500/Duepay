@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from src.utils.loading import loading
 from src.utils.path_finder import path_finder
 from src.classes.interface.duepay_interface import DuepayInterface
 
@@ -7,12 +8,16 @@ class Duepay(DuepayInterface):
 
     def extract_total(self) -> pd.DataFrame:
         
+       
         file_path = self.__find_folder()
         
         data_valor = self.__extract_data_from_xlsx(file_path)
         
         df = pd.DataFrame(data_valor)
 
+        loading(descompacting=True, cleaning=True, extract_data_csv=True)
+
+    
         return df
 
     def __find_folder(self) -> str:

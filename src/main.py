@@ -3,10 +3,15 @@ from src.classes.dataframe_merged import DataframeMerged
 
 def main():
 
-    unzip_file('input/vendas')
+    try:
 
-    dataframe = DataframeMerged()
-    dataframe.dataframe_merged()
+        unzip_file('input/vendas')
+
+        dataframe = DataframeMerged()
+        dataframe.dataframe_merged()     
+    except Exception as exception:
+        print(exception)
+        input("")   
 
 
 if __name__ == "__main__":

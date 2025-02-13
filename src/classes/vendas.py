@@ -3,11 +3,13 @@ from .interface.vendas_interface import VendasInterface
 from xml.etree import ElementTree as ET
 from src.utils.path_finder import path_finder
 from pandas import DataFrame
+from src.utils.loading import loading
 
 
 class Vendas(VendasInterface):
 
     def extract_data_cpf_total_chave(self) -> DataFrame:
+        
         
         files_path = self.__find_xmls()
 
@@ -15,12 +17,16 @@ class Vendas(VendasInterface):
 
         df = DataFrame(extract_data)
 
+        loading(descompacting=True, cleaning=True, extract_data_csv= True, extract_data_xml= True)
+
+        
         return df
 
         
     
     def __find_xmls(self) -> list:
         folder_path = path_finder(f"../input/vendas")
+        
         
         files_in_folder = os.listdir(folder_path)
 

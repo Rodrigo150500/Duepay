@@ -16,6 +16,7 @@ def path_finder(path: str) -> str:
     if getattr(sys, 'frozen', False):
         # Empacotado com PyInstaller
         base_path = os.path.dirname(sys.executable)
+        
     else:
         # Executado na IDE ou interpretador Python
         base_path = os.path.dirname(os.path.abspath(__file__))
