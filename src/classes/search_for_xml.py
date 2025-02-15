@@ -64,35 +64,30 @@ class SearchForXML:
             cpf_reference = root.find(".//CPF")
 
 
-            #Pesquisa no Duepay
-            if cpf_reference is not None:
-    
-                #Pegando CPF
-                cpf_value = cpf_reference.text.strip()  
-
-                cpf = self.__format_cpf(cpf_value)
-
-                if cpf == self.__value or total == self.__value:
-                    
-                    self.__found = True
-
-                    print(f"Caminho: {xml}")
-                    print(f"Data: {date}")
-                    print(f"CPF: {cpf if cpf_reference is not None else "Sem CPF"}")
-                    print(f"Chave de Acesso: {nfe}")
-                    print("-"*50)
+            cpf = None
             
-            #Pesquisa Geral
-            if total == self.__value:
-                
+            if cpf_reference is not None:
+                cpf_value = cpf_reference.text.strip()  
+                cpf = self.__format_cpf(cpf_value)  # Agora formatado corretamente como xxx.xxx.xxx-xx
+
+            # Verifica o tipo de entrada e realiza a comparação correta
+            encontrou = False
+            if isinstance(self.__value, str) and cpf == self.__value:  # Se for CPF (string)
+                encontrou = True
+            elif isinstance(self.__value, float) and total == self.__value:  # Se for valor total (float)
+                encontrou = True
+
+            # Se encontrar, imprime uma única vez
+            if encontrou:
                 self.__found = True
-                
+                print("")
                 print(f"Caminho: {xml}")
                 print(f"Data: {date}")
-                print(f"CPF: {cpf if cpf_reference is not None else "Sem CPF"}")
+                print(f"CPF: {cpf if cpf is not None else 'Sem CPF'}")
+                print(f"Total: {total:.2f}")
                 print(f"Chave de Acesso: {nfe}")
-                print("-"*50)
-                
+                print("-" * 50)
+                    
                 
 
             

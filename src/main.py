@@ -7,8 +7,9 @@ from src.utils.validate_input_search import validate_input_search
 def main():
 
     while True:
+        print()
 
-        escolha = validate_input_choice("Deseja realizar qual procedimento: \n1 - Gerar Duepay Excel\n2 - Realizar pesquisa\n3 - sair\nOpcao:")
+        escolha = validate_input_choice("Deseja realizar qual procedimento: \n1 - Gerar Duepay Excel\n2 - Realizar pesquisa\n3 - Sair\nOpcao:")
 
         if escolha == 1:
             try:
@@ -17,12 +18,14 @@ def main():
 
                 dataframe = DataframeMerged()
                 dataframe.dataframe_merged()     
+
             except Exception as exception:
                 print(exception)
                 input("")
         elif escolha == 2:
             try:
-                pesquisa = validate_input_search("Digite o CPF ou o valor total.\nCPF: xxx.xxx.xxx-xx\nTotal: 99.99\nValor: ")
+                print()
+                pesquisa = validate_input_search("Digite o CPF ou o valor total.\nExemplo:\nCPF: xxx.xxx.xxx-xx\nTotal: xx.xx\nValor: ")
 
                 search = SearchForXML(pesquisa)
 
