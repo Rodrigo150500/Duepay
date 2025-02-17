@@ -7,13 +7,18 @@ from src.utils.loading import loading
 def unzip_file(origin: str) -> bool:
 
   
-
   #Encontrando a pasta do arquivo zip
   path_folder_origin = path_finder(f"../{origin}")
 
 
   #Capturando apenas o nome do arquivo
-  zipFileName = listdir(path_folder_origin)[0]
+  try:
+    zipFileName = listdir(path_folder_origin)[0]
+  except Exception as exception:
+    print('')
+    print("Arquivo zip não existente, caso os arquivos xml estejam descompactados desconsidere esse aviso")
+    return False
+
 
   #Juntando o diretório da pasta + nome do arquivo
   zipFilePath = path.join(path_folder_origin, zipFileName)
