@@ -16,6 +16,7 @@ class SearchForXML:
         self.__search_manager(files_path)
 
         if (self.__found == False):
+            print("")
             print("Valores não encontrados")
         
     
