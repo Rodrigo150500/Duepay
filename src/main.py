@@ -7,6 +7,9 @@ from src.utils.validate_input_search import validate_input_search
 
 
 def main():
+    
+    unzip_file('input/vendas')    
+
 
     while True:
         print()
@@ -14,29 +17,14 @@ def main():
         escolha = validate_input_choice("Deseja realizar qual procedimento: \n1 - Gerar Duepay Excel\n2 - Realizar pesquisa\n3 - Sair\nOpcao:")
 
         if escolha == 1:
-            try:
-                
-                validacao = unzip_file('input/vendas')
+            
+            dataframe = DataframeMerged()
+            dataframe.dataframe_merged()
 
-                if validacao == True:
 
-                    dataframe = DataframeMerged()
-                    dataframe.dataframe_merged()
-
-                else:
-                    raise Exception     
-
-            except Exception as exception:
-                print(exception)
         elif escolha == 2:
 
             while True:
-
-                try:
-                    unzip_file('input/vendas')
-                except:
-                    pass
-
 
                 try:
                     print()
@@ -46,7 +34,7 @@ def main():
 
                     search.search()
 
-                    escolha = validate_input_choice("Deseja realizar outra pesquisa: \n1 - Sim\n2 - Não\n3 - Volta\nOpção:")
+                    escolha = validate_input_choice("Deseja realizar outra pesquisa: \n1 - Sim\n2 - Não\n3 - Voltar\nOpção:")
 
                     if escolha == 2 or escolha == 3:
                         break

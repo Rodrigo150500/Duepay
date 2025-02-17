@@ -24,9 +24,16 @@ class Duepay(DuepayInterface):
 
         folder_path = path_finder(f"../input/duepay")
 
-        file_in_folder = os.listdir(folder_path)
+        while True:
+            try:
+                file_in_folder = os.listdir(folder_path)[0]
 
-        file_path = os.path.join(folder_path, file_in_folder[0])
+                if ".csv" in file_in_folder:
+                    break
+            except:
+                input("Arquivo duepay .csv não encontrado. Adicione o arquivo .csv na pasta Duepay.\nTecle ENTER para continuar")
+
+        file_path = os.path.join(folder_path, file_in_folder)
 
         return file_path
 
